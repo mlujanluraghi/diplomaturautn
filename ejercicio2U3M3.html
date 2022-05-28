@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+                
+        numero1 = parseInt(prompt('Ingrese primer número:'));
+        numero2 = parseInt(prompt('Ingrese segundo número:'));
+        numero3 = parseInt(prompt('Ingrese tercer número:'));
+        numero4 = parseInt(prompt('Ingrese cuarto número:'));
+        numero5 = parseInt(prompt('Ingrese quinto número:'));
+        numeros= [numero1, numero2, numero3, numero4, numero5];
+        
+        if(numero1>numero2 && numero1>numero3 && numero1>numero4 && numero1>numero5){
+            document.write("El numero mayor es: "+numero1)
+        }else if(numero2>numero1 && numero2>numero3 && numero2>numero4 && numero2>numero5){
+            document.write("El numero mayor es: "+numero2)
+        }else if(numero3>numero1 && numero3>numero2 && numero3>numero4 && numero3>numero5){
+            document.write("El numero mayor es: "+numero3)
+        }else if(numero4>numero1 && numero4>numero2 && numero4>numero3 && numero4>numero5){
+            document.write("El numero mayor es: "+numero4)
+        }else{document.write("El numero mayor es: "+numero5)
+        }
+
+        
+     
+
+    </script>
+
+</body>
+
+</html>

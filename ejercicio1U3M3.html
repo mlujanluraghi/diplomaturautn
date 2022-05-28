@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        
+        var metros;
+
+        metros = prompt("Ingrese la distancia a recoorer en metros: ")
+
+        if (metros > 0 && metros <= 1000){
+            document.write("El transporte a seleccionar es a PIE")
+        }else if (metros>1000 && metros<=10000){
+            document.write("El transporte a seleccionar es BICICLETA")
+        }else if (metros>10000 && metros<=30000){
+            document.write("El transporte a seleccionar es COLECTIVO")
+        }else if (metros>30000 && metros<=100000){
+            document.write("El transporte a seleccionar es AUTO")
+        }else if (metros>=100000){
+            document.write("El transporte a seleccionar es AVION")
+        }
+        
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

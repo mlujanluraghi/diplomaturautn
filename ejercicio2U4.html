@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+    <style>
+        textarea {
+            padding: 10px;
+            border: 2px solid red;
+            width: 500px;
+            height: 300px;
+            font-size: 16px;
+        }
+
+        label {
+            display: block;
+        }
+        div{
+            padding-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="Entrada">
+        <h1>Ingresar el texto</h1>
+    </label>
+
+    <textarea name="contador" id="contador" onpaste="contador();" onkeyup="contador();"></textarea>
+    <label for="titulo">
+        <h1>Total de carcteres</h1>
+    </label>
+    <div id="resultado"></div>
+
+    <script>
+        function contador() {
+            var total = 30;
+            setTimeout(function () {
+                var valor = document.getElementById('contador');
+                var respuesta = document.getElementById('resultado');
+                var cantidad = valor.value.length;
+                document.getElementById('resultado').innerHTML = cantidad;
+                respuesta.style.color = 'red';
+                respuesta.style.fontSize= '30px';
+                      
+            })
+        }
+    </script>
+</body>
+
+</html>

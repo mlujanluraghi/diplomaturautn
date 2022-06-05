@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1U4</title>
+    
+    <style>
+        .rosa {
+            width: 180px;
+            height: 180px;
+            border-radius: 5px;
+            background-color: pink;
+            border: solid 2px black;
+            cursor: pointer;
+            display: flex;
+        }
+
+        .violeta {
+            width: 180px;
+            height: 180px;
+            border-radius: 5px;
+            background-color: violet;
+            border: solid 2px black;
+            cursor: pointer;
+            display: flex;
+        }
+
+        .bordo {
+            width: 180px;
+            height: 180px;
+            border-radius: 5px;
+            background-color: brown;
+            border: solid 2px black;
+            cursor: pointer;
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="D:\UTN\DIPLOMATURA WEB\MODULO 3\UNIDAD 4\estilos.css">
+    </head>
+
+    <body>
+        <div id="rosa" class="rosa">
+        </div>
+        <div id="violeta" class="violeta">
+        </div>
+        <div id="bordo" class="bordo">
+        </div>
+
+        <script>
+            (() => {
+                let rosa = document.getElementById('rosa');
+
+                rosa.addEventListener('click', () => {
+                    document.body.style.backgroundColor = 'pink';
+                }, false);
+            })();
+            (() => {
+                let violeta = document.getElementById('violeta');
+
+                violeta.addEventListener('click', () => {
+                    document.body.style.backgroundColor = 'violet';
+                }, false);
+            })();
+            (() => {
+                let bordo = document.getElementById('bordo');
+
+                bordo.addEventListener('click', () => {
+                    document.body.style.backgroundColor = 'brown';
+                }, false);
+            })();
+
+
+        </script>
+    </body>
+
+    </html>
